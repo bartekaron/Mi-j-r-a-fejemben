@@ -1,0 +1,57 @@
+.Thrallimg{
+    width: 30vw;
+}
+
+.Garroshimg{
+    width: 39vw;
+}
+.Gorehowlimg{
+    display: flex;
+    width: 16vw;
+    visibility: visible;
+    position: relative;
+    animation-name: dobas;
+    animation-duration:1s ;
+    animation-fill-mode: forwards;
+
+}
+@keyframes dobas {
+    0%   { left:0%; top:0%;}
+    100% { transform: rotate(360deg);left:60%;}
+}
+a:visited{
+    color: green;
+}
+
+a:hover{
+    color: red;
+}
+.Garrosh{
+    display: flex;
+    align-items: center;
+}
+.Thrall{
+    display: flex;
+}
+
+
+.karakterek{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(13918.jpg);
+    
+}
+
+.teljes{
+    display: flex;
+    flex-direction: column;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
