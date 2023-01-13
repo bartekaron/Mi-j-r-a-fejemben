@@ -1,3 +1,9 @@
+body{
+    
+}
+
+
+
 .Thrallimg{
     width: 30vw;
 }
@@ -15,9 +21,21 @@
     animation-fill-mode: forwards;
 
 }
+.verimg{
+    display: flex;
+    width: 15vw;
+    height: 15vw;
+    visibility: visible;
+    position: relative;
+    animation-name: ver;
+}
 @keyframes dobas {
-    0%   { left:0%; top:0%;}
-    100% { transform: rotate(360deg);left:60%;}
+    0%   { left:-45%; top:10%;}
+    100% { transform: rotate(360deg);left:64%;}
+}
+@keyframes ver {
+    0% {left: 0%; top: 0%}
+    100%{left:-20%}
 }
 a:visited{
     color: green;
@@ -33,20 +51,24 @@ a:hover{
 .Thrall{
     display: flex;
 }
+.hatter{
+    background-image: url(13918.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 
+}
 
 .karakterek{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(13918.jpg);
-    
 }
 
 .teljes{
     display: flex;
     flex-direction: column;
-    
 }
 header{
     display: flex;
