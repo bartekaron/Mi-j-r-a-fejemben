@@ -95,7 +95,7 @@ a:hover{
     display: flex;
 }
 .hatter{
-    background-image: url(13918.jpg);
+    background-image: url(./Képek/13918.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -138,3 +138,6 @@ header{
 footer{
     text-align: center;
 }
+
+
+
