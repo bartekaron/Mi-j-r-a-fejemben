@@ -2,7 +2,7 @@ body{
     overflow: hidden;
     /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(46, 196, 59) 0%, rgb(0, 54, 16) 100%);*/
     background: linear-gradient(90deg, rgba(18,72,216,1) 0%, rgba(152,88,4,1) 78%);
-    color: rgb(0, 30, 129);
+    color: rgb(29, 1, 1);
     size: 10vw;
 }
 
