@@ -1,29 +1,39 @@
 body{
-    
+    overflow: hidden;
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(46, 196, 59) 0%, rgb(0, 54, 16) 100%);*/
+    background: linear-gradient(90deg, rgba(18,72,216,1) 0%, rgba(152,88,4,1) 78%);
+    color: rgb(0, 30, 129);
+    size: 10vw;
 }
-
 
 
 .Thrallimg{
-    width: 30vw;
+    width: 19vw;
+    height: 15vw;
+
 }
 
 .Garroshimg{
-    width: 39vw;
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+    visibility: hidden;
+    animation-name: halt;
+    animation-duration:2.9s ;
+    animation-fill-mode: forwards;
 }
 .Gorehowlimg{
     display: flex;
-    width: 16vw;
+    width: 8vw;
     position: relative;
     animation-name: dobas;
     animation-duration:1s ;
     animation-fill-mode: forwards;
-
 }
 .verimg{
     display: flex;
-    width: 15vw;
-    height: 25vw;
+    width: 7.5vw;
+    height: 12.5vw;
     visibility: hidden;
     position: relative;
     animation-name: ver;
@@ -32,15 +42,44 @@ body{
     animation-fill-mode: forwards;
 }
 
+.earth2img{
+    width: 15vw;
+    height: 15vw;
+    visibility: hidden;
+    position: relative;
+    background-color: transparent;
+    animation-name: ko;
+    animation-duration:1s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+}
+
 @keyframes dobas {
     0%   { left:-45%; top:10%;}
-    100% { transform: rotate(360deg);left:64%;visibility: hidden;}
+    100% { transform: rotate(360deg);left:130%;visibility: hidden;}
 }
 @keyframes ver {
-    0% {left: 60%; top: 0%; visibility: visible;}
-    100%{left: 60%; top: 0%}
+    0% {left: 38%; top: 0%; visibility: visible;}
+    100%{left: 38%; top: 0%}
     
 }
+@keyframes ko {
+    0% {left: -50%; top: 0%; visibility: visible;}
+    100%{left: -150%; top: 0%;}
+    
+}
+@keyframes halt {
+    0% {left: 0%;top: 0%; visibility: visible;}
+    100%{left: 0%; top: 0%;}
+    
+}
+@media screen and (max-width: 600px) {
+    body{
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%,   rgb(3, 117, 37) 0%, rgb(114, 240, 125) 100%);
+    }
+}
+
+
 a:visited{
     color: green;
 }
@@ -60,13 +99,13 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
 }
 
 .karakterek{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -81,3 +120,21 @@ header{
     text-align: center;
 }
 
+.table1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 0 1px 10px;
+}
+.icon{
+    width: 80px;
+    transition: width 2s, height 2s, transform 2s;
+}
+.icon:hover {
+    width: 130px;
+    transform: rotate(720deg);
+}
+footer{
+    text-align: center;
+}
