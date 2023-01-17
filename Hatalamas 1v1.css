@@ -14,7 +14,6 @@ body{
 .Gorehowlimg{
     display: flex;
     width: 16vw;
-    visibility: visible;
     position: relative;
     animation-name: dobas;
     animation-duration:1s ;
@@ -24,18 +23,23 @@ body{
 .verimg{
     display: flex;
     width: 15vw;
-    height: 15vw;
-    visibility: visible;
+    height: 25vw;
+    visibility: hidden;
     position: relative;
     animation-name: ver;
+    animation-duration:1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
 }
+
 @keyframes dobas {
     0%   { left:-45%; top:10%;}
-    100% { transform: rotate(360deg);left:64%;}
+    100% { transform: rotate(360deg);left:64%;visibility: hidden;}
 }
 @keyframes ver {
-    0% {left: 0%; top: 0%}
-    100%{left:-20%}
+    0% {left: 60%; top: 0%; visibility: visible;}
+    100%{left: 60%; top: 0%}
+    
 }
 a:visited{
     color: green;
